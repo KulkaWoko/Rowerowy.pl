@@ -1,0 +1,353 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <title>Rowerowy.pl</title>
+    <link rel="stylesheet" type="text/css" href="Layout.css" />
+    <link rel="stylesheet" type="text/css" href="Menu.css" />
+    <style>
+        
+        #PoleTabeli
+        {
+            width: 780px;
+            height: 600px;
+            border: 0px;
+            padding: 0px;
+            margin: auto;
+            background-color: rgb(179, 187, 179);
+        }
+
+      
+        * {
+            font-family: Times New Roman;
+        }
+
+        table {
+        
+            padding: 1px;
+            border-spacing: 0px;
+            text-align: center;
+            background-color: rgb(231, 253, 239);
+        }
+
+      
+        table, td, th {
+            border: 1px solid black;
+        }
+
+      
+        tr th {
+           
+            font-family: Times New Roman;
+            font-style: italic;
+            font-weight: bolder;
+            font-size: 12px;
+            
+            color: rgb(0, 0, 0);
+            padding: 2px;
+            background-color: rgb(248, 248, 248)
+        }
+
+        tr td {
+            font-family: Times New Roman;
+            font-weight: none;
+            font-size: larger;
+            color: rgb(0, 0, 0);
+            border-color: rgb(3, 3, 3);
+            padding: 4px;
+        }
+
+    
+        th.miesiace {
+            width: 26px;
+        }
+
+        td.plus {
+            background-color: rgb(117, 238, 137);
+        }
+
+        td.minus {
+            background-color: rgba(255, 0, 43, 0.308);
+            color: black;
+        }
+        td.owszem{
+            background-color: rgb(92, 138, 156);
+        }
+        td.owszem2{
+            background-color: rgb(67, 156, 44);
+        }
+        td.owszem3{
+            background-color: blanchedalmond;
+        }
+        td.owszem4{
+            background-color: rgb(149, 223, 241);
+        }
+
+        tbody #name {
+            color: blue;
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+    <header style="background-color:rgb(224, 224, 224);">
+        <h1>Rowerowy.pl - Polski sklep rowerowy</h1>
+    </header>
+    <nav>
+        <h2>Menu:</h2>
+        <ul>
+            <li><a href="Menu.html" target="_self">Start</a></li>
+            <li><a href="Tabelka.html" target="_self">Wyniki pracowników</a></li>
+            <li><a href="Info.html" target="_self">Nasza oferta</a></li>
+            <li><a href="Formularz.html" target="_self">Formularz</a></li>
+            <li><a href="Składaki.html" target="_self">Rowery Składadane</a></li>
+            <li><a href="Górskie MTB.html" target="_self">Rowery Górskie MTB</a></li>
+            <li><a href="Szosowe.html" target="_self">Rowery Szosowe</a></li>
+            <li><a href="Miejskie.html" target="_self">Rowery Miejskie</a></li>
+            <li><a href="Trekkingowe.html" target="_self">Rowery Trekkingowe</a></li>
+            <li><a href="Rysowanie Loga.html" target="_self">Logo Firmy</a></li>
+            <li><a href="http://www.put.poznan.pl" target="_blank">Firma zlecająca</a></li>
+            <li><a href="Slajdy.html" target="_self">Nasza Ekipa</a></li>
+        </ul>
+    </nav>
+    <article>
+        <div id="PoleTabeli">
+            <h2>Miesięczne wyniki naszych pracowników:</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th rowspan="2">Lp.</th>
+                        <th colspan="2">Pracownik</th>
+                        <th rowspan="5">Do <br /> zwolnienia</th>
+                        <th colspan="12">Rok 2020 - wyniki miesięczne (target sprzedażowy)</th>
+                        <th colspan="3" rowspan="2">Pozycja</th>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">Imię</th>
+                        <th rowspan="2">Nazwisko</th>
+                        <th class="miesiace">1</th>
+                        <th class="miesiace">2</th>
+                        <th class="miesiace">3</th>
+                        <th class="miesiace">4</th>
+                        <th class="miesiace">5</th>
+                        <th class="miesiace">6</th>
+                        <th class="miesiace">7</th>
+                        <th class="miesiace">8</th>
+                        <th class="miesiace">9</th>
+                        <th class="miesiace">10</th>
+                        <th class="miesiace">11</th>
+                        <th class="miesiace">12</th>
+                      
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.</td>
+                        <td id="name">Michał</td>
+                        <td id="name">Owalny</td>
+                        <td rowspan="1">Nie</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td rowspan="1" class="owszem3">manager</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td id="name">Maciek</td>
+                        <td id="name">Kwadratowy</td>
+                        <td rowspan="1">Tak</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td rowspan="1" class="owszem">sprzedawca</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td id="name">Monika</td>
+                        <td id="name">Stożek</td>
+                        <td rowspan="1">Tak</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td rowspan="1" class="owszem">sprzedawca</td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td id="name">Marian</td>
+                        <td id="name">Czworościan</td>
+                        <td rowspan="1">Nie</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td rowspan="1" class="owszem2">asystent</td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td id="name">Marcin</td>
+                        <td id="name">Równoboczny</td>
+                        <td rowspan="1">Nie</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td rowspan="1" class="owszem4">kierwonik</td>
+                    </tr>
+                    <tr>
+                        <td>6.</td>
+                        <td id="name">Michael</td>
+                        <td id="name">Płaski</td>
+                        <td rowspan="1">Nie</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td rowspan="1" class="owszem">sprzedawca</td>
+                    </tr>
+                    <tr>
+                        <td>7.</td>
+                        <td id="name">Martyna</td>
+                        <td id="name">Ostroboczna</td>
+                        <td rowspan="1">Nie</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td rowspan="1" class="owszem">sprzedawca</td>
+                    </tr>
+                    <tr>
+                        <td>8.</td>
+                        <td id="name">Michalina</td>
+                        <td id="name">Szerokokątna</td>
+                        <td rowspan="1">Nie</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td rowspan="1" class="owszem">sprzedawca</td>
+                    </tr>
+                    <tr>
+                        <td>9.</td>
+                        <td id="name">Mirosława</td>
+                        <td id="name">Sześciokąt</td>
+                        <td rowspan="1">Nie</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td rowspan="1" class="owszem">sprzedawca</td>
+                    </tr>
+                    <tr>
+                        <td>10.</td>
+                        <td id="name">Mirosław</td>
+                        <td id="name">Trójkąt</td>
+                        <td rowspan="1">Nie</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td colspan="1" class="minus">-</td>
+                        <td colspan="1" class="plus">+</td>
+                        <td rowspan="1" class="owszem2">asystent</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </article>
+    <aside>
+        <iframe src="Kontrolki_JS.html">
+        </iframe>
+    </aside>
+    <footer>
+        <u>Kontakt: </u> <br /> <br />
+        <b>Krzysztof Ługowski </b> <br />
+        numer albumu: 149378 <br />
+        grupa: L-3 <br />
+        email: krzysztof.lugowski@student.put.poznan.pl
+    </footer>
+</body>
+</html>

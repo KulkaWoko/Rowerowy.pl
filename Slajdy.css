@@ -1,0 +1,29 @@
+﻿footer{
+    text-align: center;
+    font-size: large;}
+    footer::before{
+        width: 10px;
+        height: 10px;
+        content:"PP";
+    
+
+    }
+    progress{
+        width:1024;
+        height: 10px;
+        display: inline-block;
+        position: fixed;
+        bottom: 0px;
+    }
+.slider{
+    width: 500px;
+    height: 300px;
+    overflow:hidden;
+}
+.slider ul{
+    list-style: none;
+}
+.slider ul li{
+    width: 500px;
+    height: 300px;
+}

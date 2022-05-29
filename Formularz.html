@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <title>Rowerowy.pl</title>
+    <link rel="stylesheet" type="text/css" href="Layout.css" />
+    <link rel="stylesheet" type="text/css" href="Menu.css" />
+</head>
+<body>
+    <header style="background-color:rgb(224, 224, 224)">
+        <h1>Rowerowy.pl - Polski sklep rowerowy</h1>
+    </header>
+    <nav>
+        <h2>Menu:</h2>
+        <ul>
+            <li><a href="Menu.html" target="_self">Start</a></li>
+            <li><a href="Tabelka.html" target="_self">Wyniki pracowników</a></li>
+            <li><a href="Info.html" target="_self">Nasza oferta</a></li>
+            <li><a href="Formularz.html" target="_self">Formularz</a></li>
+            <li><a href="Składaki.html" target="_self">Rowery Składadane</a></li>
+            <li><a href="Górskie MTB.html" target="_self">Rowery Górskie MTB</a></li>
+            <li><a href="Szosowe.html" target="_self">Rowery Szosowe</a></li>
+            <li><a href="Miejskie.html" target="_self">Rowery Miejskie</a></li>
+            <li><a href="Trekkingowe.html" target="_self">Rowery Trekkingowe</a></li>
+            <li><a href="Rysowanie Loga.html" target="_self">Logo Firmy</a></li>
+            <li><a href="http://www.put.poznan.pl" target="_blank">Firma zlecająca</a></li>
+            <li><a href="Slajdy.html" target="_self">Nasza Ekipa</a></li>
+            
+        </ul>
+    </nav>
+    <article>
+        <h2>Formularz kontaktowy</h2>
+        <form action="mailto: krzysztof.lugowski@put.poznan.pl" method="post" enctype="text/plain">
+            <p>
+                <b>Poniższy formularz umożliwi Państwu szybki kontakt z naszą firmą.<br /> 
+                    Prosimy o wypełnienie i przesłanie go, a nasz pracwonik skontaktuję się z Państwem. <br/>
+                </b>
+                <br />
+                Obwiązkowe pola oznaczono znakiem (<em>*</em>).
+            </p>
+            <fieldset>
+                <legend>Dane kontaktowe</legend>
+                <label for="imie">Imię<em>*</em></label>
+                <input id="imie" name="name" placeholder="Podaj imię" autofocus required />
+                <br />
+                <label for="">Nazwisko<em>*</em></label>
+                <input id="nazwisko" name="surname" placeholder="Podaj nazwisko" required />
+                <br />
+                <label for="telefon">Nr telefonu<em>*</em></label>
+                <input id="telefon" name="phone" placeholder="(+48)xxx-xxx-xxx" required/>
+                <br />
+                <label for="">E-mail<em>*</em></label>
+                <input id="mail" name="email" type="email" required />
+                <br />
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Jak możemy pomóc?</legend>
+                <label for="kontakt">Cel kontaktu<em>*</em></label> <br />
+                <select id="kontakt">
+                    <option value="serwis i konserwacja">serwis i konserwacja</option>
+                    <option value="diagnostyka i naprawa">diagnostyka i naprawa</option>
+                    <option value="przekląd roweru elektrycznego">przekląd roweru elektrycznego</option>
+                    <option value="obsługa techniczna podczas wakacji">obsługa techniczna podczas wakacji</option>
+                    <option value="ulepszenia i wymiana">ulepszenia i wymiana</option>
+                    <option value="fachowa pomoc">fachowa pomoc</option>
+                    <option value="pomoc przy zakupie roweru używanego">pomoc przy zakupie roweru używanego</option>
+                    <option value="reklamacja">reklamacja</option>
+                    <option value="skargi">skargi</option>
+                    <option value="pytanie odnośnie dostępności roweru">pytanie odnośnie dostępności roweru</option>
+                    <option value="inne">inne</option>
+                </select>
+                     <br />
+                     
+                <label for="opis">Opisz swoje zgłoszenie: <em>*</em></label><br />
+                    <textarea id="comment" ROWS=20 COLS=80 oninput="validateComments(this)" required></textarea>
+                    <br />
+                    <br />
+                    <label for="plik">Załącznik:</label>
+                    <input type="file" id="plik" name="file" /> 
+                    <br /> 
+                    <label for="birth_date">Data zakupu:</label>
+                    <input type="date" id="purchase" name="purchase_1" plecholder="__/__/____"><br />
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Pomiary</legend>
+                <legend>Wybierz rozmiar ramy:</legend>
+                <label for="XS"><input type="checkbox" id="XS" name="XS_1" >Wzrost: 152-157 cm; rozmiar ramy: 14" </label> <br>
+                <label for="XS/S"><input type="checkbox" id="XS/S" name="XS/S_1" >Wzrost: 157-162 cm; rozmiar ramy: 15"</label> <br>
+                <label for="S"><input type="checkbox" id="S" name="S_1" >Wzrost: 162-167 cm; rozmiar ramy: 16"</label> <br>
+                <label for="M"><input type="checkbox" id="M" name="M_1" >Wzrost: 174-179 cm; rozmiar ramy: 18"</label> <br>
+                <label for="L"><input type="checkbox" id="L" name="L_1">Wzrost: 185-190 cm; rozmiar ramy: 20"</label> <br />
+                <label for="XL"><input type="checkbox" id="XL" name="XL_1">Wzrost: powyżej 196 cm; rozmiar ramy: 22"  </label> <br />
+
+                <label>Płeć</label><br />
+                <label for="sex_1"><input type="radio" id="sex_1" name="sex" value="kobieta">Kobieta</label><br />
+                <label for="sex_2"><input type="radio" id="sex_2" name="sex" value="mezczyzna">Mężczyzna</label><br />
+                <br />
+                <label for="wiek">Wprowadź swój wiek:</label>
+                <input type="number" id="wiek" min="1" max="99" step="1" ><br />
+              
+            </fieldset>
+            <fieldset>
+                <legend>Jazda</legend>
+                <label> Oceń swój poziom zaawansowania:</label>
+                <head>
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <style>
+                    .slidecontainer {
+                      width: 50%;
+                    }
+                    
+                    .slider {
+                      -webkit-appearance: none;
+                      width: 100%;
+                      height: 25px;
+                      background: #575b7c;
+                      outline: none;
+                      opacity: 0.9;
+                      -webkit-transition: .2s;
+                      transition: opacity .2s;
+                    }
+                    
+                    .slider:hover {
+                      opacity: 1;
+                    }
+                    
+                    .slider::-webkit-slider-thumb {
+                      -webkit-appearance: none;
+                      appearance: none;
+                      width: 25px;
+                      height: 25px;
+                      background: #04AA6D;
+                      cursor: pointer;
+                    }
+                    
+                    .slider::-moz-range-thumb {
+                      width: 25px;
+                      height: 25px;
+                      background: #04AA6D;
+                      cursor: pointer;
+                    }
+                    </style>
+                    </head>
+                    <body>
+                        <p>10 - Zaawansowany <br /> 1 - Początkujący</p>
+
+                    <div class="slidecontainer">
+                      <input type="range" min="1" max="10" value="5" class="slider" id="myRange">
+                      <p>wartość: <span id="demo"></span></p>
+                    </div>
+                    
+                    <script>
+                    var slider = document.getElementById("myRange");
+                    var output = document.getElementById("demo");
+                    output.innerHTML = slider.value;
+                    
+                    slider.oninput = function() {
+                      output.innerHTML = this.value;
+                    }
+                    </script>
+                    
+                    </body>
+            
+                <label>Staż:</label>
+                <select id="zaawansowanie">
+                    <option id="tak sobie" > mniej niż rok</option>
+                    <option id="ok">między 1-3 lata</option>
+                    <option id="dobrze">ponad 4 lata</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Zgody i Regulaminy</legend>
+                <label for="statute"><input type="checkbox" id="statute" name="statute_1" required>Zapoznałem się i akceptuję Regulamin.<em>*</em></label> <br>
+                <label for="rodo_OK"><input type="checkbox" id="rodo_OK" name="rodo_1" required>Wyrażam zgodę na przetwarzanie danych osobowych.<em>*</em></label> <br>
+                <label for="mail_OK"><input type="checkbox" id="mail_OK" name="e-mail_1" >Marketing przez E-mail</label> <br>
+                <label for="sms_OK"><input type="checkbox" id="sms_OK" name="sms_1" >Marketing przez SMS</label> <br>
+                <label for="call_OK"><input type="checkbox" id="call_OK" name="call_1">Marketing przez połączenie telefoniczne</label> <br />
+            </fieldset>
+            <fieldset> 
+                <legend>Ostatni krok</legend>
+                <p>
+                    <input type="submit" value="Wyślij formularz" />
+                </p></fieldset>
+
+            
+
+        </form>
+    </article>
+    <aside>
+        <iframe src="Kontrolki_JS.html">
+        </iframe>
+    </aside>
+    <footer>
+        <u>Kontakt: </u> <br /> <br />
+        <b>Krzysztof Ługowski </b> <br />
+        numer albumu: 149378 <br />
+        grupa: L-3 <br />
+        email: krzysztof.lugowski@student.put.poznan.pl
+    </footer>
+</body>
+</html>

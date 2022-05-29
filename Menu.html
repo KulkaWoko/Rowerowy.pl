@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <title>Rowerowy.pl</title>
+    <link rel="stylesheet" type="text/css" href="Layout.css" />
+    <link rel="stylesheet" type="text/css" href="Menu.css" />
+    <script>
+        var ImgNo = 0;
+        var Tab_Img = new Array(7);
+        Tab_Img[0] = "figure_1.png";
+        Tab_Img[1] = "home_1.png";
+        Tab_Img[2] = "home_2.png";
+        Tab_Img[3] = "home_3.png";
+        Tab_Img[4] = "warie.png";
+        Tab_Img[5] = "wisie.png";
+        Tab_Img[6] = "put.png";
+
+        function Start() {
+            document.getElementById("img_browser").style.visibility = "hidden";
+        }
+
+        function ShowHide() {
+            var Img_Brow = document.getElementById("img_browser");
+            var Btn = document.getElementById("button");
+            if (Img_Brow.style.visibility == "hidden") {
+                Img_Brow.style.visibility = "visible";
+                Btn.value = "Kliknij tutaj żeby ukryć przegladarkę obrazów";
+            }
+            else {
+                Img_Brow.style.visibility = "hidden";
+                Btn.value = "Kliknij tutaj żeby zobaczyć przegladarkę obrazów";
+                ImgNo = 0;
+                document.getElementById("image").src = Tab_Img[ImgNo];
+            }
+        }
+
+        function Next() {
+            if (ImgNo < Tab_Img.length - 1) {
+                ImgNo = ImgNo + 1;
+                document.getElementById("image").src = Tab_Img[ImgNo];
+            }
+            else {
+                document.getElementById("image").src = Tab_Img[Tab_Img.length - 1];
+                ImgNo = Tab_Img.length - 1;
+            }
+        }
+
+        function Prev() {
+            if (ImgNo > 0) {
+                ImgNo = ImgNo - 1;
+                document.getElementById("image").src = Tab_Img[ImgNo];
+            }
+            else {
+                document.getElementById("image").src = Tab_Img[0];
+                ImgNo = 0;
+            }
+        }
+
+        function First() {
+            document.getElementById("image").src = Tab_Img[0];
+            ImgNo = 0;
+        }
+
+        function Last() {
+            document.getElementById("image").src = Tab_Img[Tab_Img.length - 1];
+            ImgNo = Tab_Img.length - 1;
+        }
+    </script>
+    <style>
+        h2 {
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body onload="Start()">
+    <header style="background-color:rgb(224, 224, 224)">
+        <h1>Rowerowy.pl - Polski sklep rowerowy</h1>
+    </header>
+    <nav>
+        <h2>Menu:</h2>
+        <ul>
+            <li><a href="Index.html" target="_self">Start</a></li>
+            <li><a href="Tabelka.html" target="_self">Wyniki pracowników</a></li>
+            <li><a href="Info.html" target="_self">Nasza oferta</a></li>
+            <li><a href="Form.html" target="_self">Formularz</a></li>
+            <li><a href="Składaki.html" target="_self">Rowery Składadane</a></li>
+            <li><a href="Górskie MTB.html" target="_self">Rowery Górskie MTB</a></li>
+            <li><a href="Szosowe.html" target="_self">Rowery Szosowe</a></li>
+            <li><a href="Miejskie.html" target="_self">Rowery Miejskie</a></li>
+            <li><a href="Trekkingowe.html" target="_self">Rowery Trekkingowe</a></li>
+            <li><a href="Rysowanie Loga.html" target="_self">Logo Firmy</a></li>
+            <li><a href="http://www.put.poznan.pl" target="_blank">Firma zlecająca</a></li>
+            <li><a href="Slajdy.html" target="_self">Nasza Ekipa</a></li>
+        </ul>
+    </nav>
+    <article>
+        <h2>Informacje</h2>
+        <p style=" text-align: center;">
+            <br /> <br />  <br /> <br />  <br />
+          
+            Rowerowy.pl jest firmą zajmującą się sprzedarzą i serwisowaniem rowerów od 1995 roku. <br />
+                <br />
+                Nasz sklep lokalizowany w Poznaniu przy ulicy Sokolej 2, gdzie mają Państwo możliość <br />
+                przetestowania rowerów dostępnych na naszej stronie internetowej oraz oddania roweru . <br />
+                do serwisu. <br />
+                Zapraszamy od poniedziałku do piątku 8.00 - 16.00 <br />
+                <br />
+                Lokalizacja sklepu:
+                <figure>
+                    <img src="mapa1.png" name="dojazd do siedziby firmy" usemap="#MAP" class="center"> 
+                    <html>
+                        <head>
+                        <meta name="viewport" content="width=device-width, initial-scale=1">
+                        <style>
+                        img {
+                          display: block;
+                          margin-left: auto;
+                          margin-right: auto;
+                        }
+                        </style>
+                    <map name="MAP">
+                        <area shape="rect" coords="3, 10, 300, 350 ,"
+                              href="https://goo.gl/maps/jLDEuSrH8UjfGZs5A" target="_blank"/> <br />
+                <a style="margin:auto; text-align:center; display:block;"  href="Info.html" target="_self">Nasza oferta</a> </a>  <br />
+        </p>
+    
+    </article>
+    <aside>
+        <iframe src="Kontrolki_JS.html">
+
+        </iframe>
+    </aside>
+    <footer>
+        <u>Kontakt: </u> <br /> <br />
+        <b>Krzysztof Ługowski </b> <br />
+        numer albumu: 149378 <br />
+        grupa: L-3 <br />
+        email: krzysztof.lugowski@student.put.poznan.pl
+    </footer>
+</body>
+</html>

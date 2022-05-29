@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <title>Rowerowy.pl</title>
+    <link rel="stylesheet" type="text/css" href="Layout.css" />
+    <link rel="stylesheet" type="text/css" href="Menu.css" />
+    <style>
+        canvas
+        {
+            border: 1px dotted rgb(172, 48, 48);
+            background-color: white;
+        }
+        input
+        {
+            color: #F00;
+            background-color: bisque;
+        }
+        input.Selected
+        {
+            color: #00F;
+            background-color: antiquewhite;
+        }
+    </style>
+    <script type="text/javascript">
+        var can;
+        var cont;
+
+        window.onload = function ()
+        {
+            can = document.getElementById("plotno");
+        }
+
+        function wyczyscRysunek()
+        {
+            cont.clearRect(0, 0, can.width, can.height);
+        }
+
+        function rysujLinie()
+        {
+            if (cont == null)
+            {
+                cont = can.getContext("2d");
+            }
+
+            cont.beginPath();
+            cont.lineWidth = 6;
+            cont.strokeStyle = "brown";
+            cont.lineCap = "square" // można także: 'butt' lub 'square'
+            cont.moveTo(80, 20);
+            cont.lineTo(60, 300);
+            cont.stroke();
+
+            cont.beginPath();
+            cont.lineWidth = 6;
+            cont.strokeStyle = "brown";
+            cont.moveTo(80, 20);
+            cont.lineTo(250, 300);
+            cont.stroke();
+
+            cont.beginPath();
+            cont.lineWidth = 6;
+            cont.strokeStyle = "brown";
+            cont.moveTo(250, 300);
+            cont.lineTo(320, 20);
+            cont.stroke();
+
+            cont.beginPath();
+            cont.lineWidth = 6;
+            cont.strokeStyle = "brown";
+            cont.moveTo(320, 20);
+            cont.lineTo(500, 300);
+            cont.stroke();
+
+            cont.beginPath();
+            cont.globalAlpha = 0.1;
+            cont.arc(200, 150, 120, 0, 2 * Math.PI, true);
+            cont.strokeStyle = "black";
+            cont.stroke();
+            cont.fillStyle = "blue";
+            cont.fill();
+            cont.globalAlpha = 1;
+
+            if (cont == null)
+            {
+                cont = can.getContext("2d");
+            }
+
+            cont.font = "50px Times New Roman";
+            cont.textAlign = "center";
+            cont.fillStyle = "black";
+            cont.fillText("Rowerowy.pl", can.width / 2.5, 200);
+
+        }
+        
+
+        
+
+        
+
+    </script>
+</head>
+<body>
+    <header style="background-color:rgb(224, 224, 224)">
+        <h1>Rowerowy.pl - Polski sklep rowerowy</h1>
+    </header>
+    <nav>
+        <h2>Menu:</h2>
+        <ul>
+            <li><a href="Menu.html" target="_self">Start</a></li>
+            <li><a href="Tabelka.html" target="_self">Wyniki pracowników</a></li>
+            <li><a href="Info.html" target="_self">Nasza oferta</a></li>
+            <li><a href="Formularz.html" target="_self">Formularz</a></li>
+            <li><a href="Składaki.html" target="_self">Rowery Składadane</a></li>
+            <li><a href="Górskie MTB.html" target="_self">Rowery Górskie MTB</a></li>
+            <li><a href="Szosowe.html" target="_self">Rowery Szosowe</a></li>
+            <li><a href="Miejskie.html" target="_self">Rowery Miejskie</a></li>
+            <li><a href="Trekkingowe.html" target="_self">Rowery Trekkingowe</a></li>
+            <li><a href="Rysowanie Loga.html" target="_self">Logo Firmy</a></li>
+            <li><a href="http://www.put.poznan.pl" target="_blank">Firma zlecająca</a></li>
+            <li><a href="Slajdy.html" target="_self">Nasza Ekipa</a></li>
+        </ul>
+    </nav>
+    <article>
+        <h1>Generowanie loga Firmy Rowerowo.pl</h1>
+        <form>
+            <input type="button" name="RysujBtn" value="LOGO" onclick="rysujLinie();" />
+            <input type="button" name="RysujBtn" value="Wyczyść mnie!"
+                   onclick="wyczyscRysunek();" class="Selected" />
+            <br /><br />
+            <canvas id="plotno" width="600" height="400"></canvas>
+        </form>
+    </article>
+    <aside>
+        <iframe src="Kontrolki_JS.html">
+        </iframe>
+    </aside>
+    <footer>
+        <u>Kontakt: </u> <br /> <br />
+        <b>Krzysztof Ługowski </b> <br />
+        numer albumu: 149378 <br />
+        grupa: L-3 <br />
+        email: krzysztof.lugowski@student.put.poznan.pl
+    </footer>
+</body>
+</html>
